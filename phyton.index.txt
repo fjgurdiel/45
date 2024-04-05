@@ -1,0 +1,11 @@
+import subprocess
+import random
+
+# List of Telegram usernames
+usernames = ['@frankieboytv', '@jupiterandme', '@qwer20102022']
+
+# Select a random username
+random_username = random.choice(usernames)
+
+# Open Telegram with the selected username
+subprocess.Popen(['telegram', f'https://t.me/{random_username}'])
